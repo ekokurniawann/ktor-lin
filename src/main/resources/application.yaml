@@ -1,10 +1,12 @@
 ktor:
-    application:
-        modules:
-            - com.coderse.ApplicationKt.module
-    deployment:
-        port: 8080
+  application:
+    modules:
+      - com.coderse.ApplicationKt.module
+  deployment:
+    port: 8080
+
 jwt:
-  domain: "https://jwt-provider-domain/"
-  audience: "jwt-audience"
-  realm: "ktor sample app"
+  issuer: "http://localhost"
+  audience: "my-audience"
+  realm: "my realm"
+  secret: "dasdasdasd"
